@@ -1,9 +1,7 @@
 # YSGuideView
-### 一.概述
+## 一.概述
 * 快速创建第一次启动页面时显示指导页
 * 直接一行代码即可
-* 如果是不用渲染背景图,直接在`ViewDidLoad`里面调用
-* 如果要渲染背景图,在`ViewDidAppear`里面条用
 
 ```ObjectiveC
 /*!
@@ -19,3 +17,11 @@
                 saturationDeltaFactor:(CGFloat)saturationDeltaFactor
                                inView:(UIView *)inView;
 ```
+
+## 二.使用
+* 如果不要渲染背景图, inView:参数传 nil
+* 渲染背景图, inView:传渲染背景图的控制的view,一般是`self.view`
+* 如果是不用渲染背景图,直接在`ViewDidLoad`里面调用
+* 如果要渲染背景图,在`ViewDidAppear`里面条用
+
+
